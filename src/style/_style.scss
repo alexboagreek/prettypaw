@@ -72,22 +72,27 @@ iframe {
 }
 
 .container {
-  padding: 0 16px;
+  padding-left: 16px;
+  padding-right: 16px;
 
   @include sm {
-    padding: 0 24px;
+    padding-left: 24px;
+    padding-right: 24px;
   }
 
   @include md {
-    padding: 0 32px;
+    padding-left: 32px;
+    padding-right: 32px;
   }
 
   @include xl {
-    padding: 0 30px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 
   @include xxl {
-    padding: 0 60px;
+    padding-left: 60px;
+    padding-right: 60px;
     max-width: 2560px;
     margin: 0 auto;
   }
@@ -107,7 +112,6 @@ iframe {
   background-color: $second;
   border-radius: 80px;
 
-
   &:after {
     content: '';
     display: block;
@@ -115,4 +119,24 @@ iframe {
     height: 16px;
     background: url('../img/arrow.svg') center/contain no-repeat;
   }
+
+  @include lg {
+    padding: 17px 32px;
+    font-size: 20px;
+    gap: 10px;
+  }
+}
+
+.swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  border-radius: 16px;
+  background-color: $second;
+  opacity: 1;
+  transition: width .3s ease;
+}
+
+.swiper-pagination-bullet-active {
+  width: 40px;
+  background-color: $back;
 }
