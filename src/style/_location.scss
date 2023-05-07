@@ -36,10 +36,11 @@
       padding: 0;
     }
 
-    &::after {
+    &:not(:last-child)::after {
       content: '';
       position: absolute;
       display: block;
+      z-index: 5;
       width: calc(100% - 32px);
       bottom: 0;
       right: 50%;
