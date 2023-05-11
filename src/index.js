@@ -4,10 +4,13 @@ import 'swiper/scss/pagination';
 import './index.scss';
 import { sliderInit } from './modules/sliders';
 import { videoBGInit } from './modules/videoBg';
+import { menuControl } from './modules/menuControl';
 
 //use modules
 
 videoBGInit();
+
+menuControl();
 
 sliderInit('.about__slider', {
   pagination: {
