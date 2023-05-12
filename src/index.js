@@ -18,12 +18,18 @@ sliderInit('.about__slider', {
   }
 });
 
+const careerImageItems = document.querySelectorAll('.career__image-item');
+
+careerImageItems.forEach((item, index) => {
+  item.classList.add(`career__image-item_${index % 2 ? 'even' : 'odd'}`);
+});
+
 sliderInit('.career__slider', {
   pagination: {
     el: '.career__slider_pagination',
   },
   breakpoints: {
-    768: {
+    576: {
       slidesPerView: 'auto',
       spaceBetween: 20,
       pagination: false,
