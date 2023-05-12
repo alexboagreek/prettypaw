@@ -1,16 +1,18 @@
 import './index.html';
+import './page.html';
 import 'swiper/scss';
 import 'swiper/scss/pagination';
 import './index.scss';
 import { sliderInit } from './modules/sliders';
 import { videoBGInit } from './modules/videoBg';
 import { menuControl } from './modules/menuControl';
+import { locationHover } from './modules/locationHover';
 
 //use modules
 
 videoBGInit();
-
 menuControl();
+locationHover();
 
 sliderInit('.about__slider', {
   pagination: {
