@@ -7,12 +7,14 @@ import { sliderInit } from './modules/sliders';
 import { videoBGInit } from './modules/videoBg';
 import { menuControl } from './modules/menuControl';
 import { locationHover } from './modules/locationHover';
+import { initScrollTopButton } from './modules/scrollTopButton';
 
 //use modules
 
 videoBGInit();
 menuControl();
 locationHover();
+initScrollTopButton('arrow-top');
 
 sliderInit('.about__slider', {
   pagination: {
